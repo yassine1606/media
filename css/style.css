@@ -1,0 +1,115 @@
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+@media screen and (min-width: 1250px) {
+
+    ul:nth-child(3) li:nth-child(1) {
+
+        background-color: blue;
+
+    }
+
+    ul:nth-child(3) li:nth-child(2) {
+        background-color: green;
+    }
+
+}
+
+@media screen and (max-width: 1250px) {
+    ul:nth-child(5) li:nth-child(1) {
+        background-color: orange;
+    }
+
+    ul:nth-child(5) li:nth-child(2) {
+        background-color: red;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    ul:nth-child(7) li:nth-child(1) {
+        text-decoration: underline;
+        font-weight: bold;
+
+    }
+
+
+}
+
+@media screen and (min-width: 1250px) {
+    ul:nth-child(7) li:nth-child(2) {
+        background-color: blue;
+        font-style: italic;
+
+    }
+
+
+}
+
+@media screen and (min-width: 800px) and (max-width:900px) {
+    h2:nth-child(8) {
+        background-color: green;
+        border: 2px solid black;
+
+    }
+
+
+}
+
+@media screen and (min-width: 900px) and (max-width:1250px) {
+    h2:nth-child(10) {
+        background-color: red;
+        border: 2px solid black;
+
+    }
+
+    ul:nth-child(11) li:nth-child(1) {
+        background-color: red;
+        border: 2px solid black;
+
+    }
+}
+
+#exo6 {
+    background-image: url("../images/tartine.jpg");
+    height: 250px;
+    width: 250px;
+}
+
+@media screen and (max-width: 900px) {
+    #exo6 {
+        height: 125px;
+        width: 125px;
+    }
+}
+
+@media print {
+    h2 {
+        color: black;
+    }
+
+    image {
+        opacity: 0;
+    }
+
+}
+@media screen and (max-width : 675px) {
+    li {
+        display: block;
+    }
+
+    a:hover {
+        color: orange;
+    }
+}
+@media screen and (min-width :1250px) {
+    a {
+        font-size: 300%;
+    }
+
+    a :hover {
+        color: green;
+    }
+}
